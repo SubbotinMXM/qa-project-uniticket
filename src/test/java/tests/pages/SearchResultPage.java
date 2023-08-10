@@ -44,9 +44,10 @@ public class SearchResultPage extends BasePage {
     /**
      * Ждет появления нужных дат и цены в верхнем блоке с текущей и соседними датами
      */
-    public void waitForPage() {
+    public SearchResultPage waitForPage() {
         waitForElementVisible(dateOfDeparture);
         waitFotTextMatches("\\d+", priceSelected);
+        return this;
     }
 
     /**

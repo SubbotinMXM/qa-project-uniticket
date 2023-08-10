@@ -28,7 +28,7 @@ public class MainTest extends BaseTest {
                 .chooseDateOfComingBack(expectedArrival)
                 .clickSearchButton();
 
-        searchResultPage.waitForPage();
+
 
         //сбор актуальных данных
         int actualArrivalDate = searchResultPage.getArrivalDate();

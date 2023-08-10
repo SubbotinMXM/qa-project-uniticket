@@ -50,6 +50,6 @@ public class HomePage extends BasePage {
 
     public SearchResultPage clickSearchButton() {
         driver.findElement(searchButton).click();
-        return new SearchResultPage(driver);
+        return new SearchResultPage(driver).waitForPage();
     }
 }
